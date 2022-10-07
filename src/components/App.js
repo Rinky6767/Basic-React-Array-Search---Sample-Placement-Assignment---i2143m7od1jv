@@ -7,7 +7,7 @@ const searchArray = ["Newton", "School", "Newton School", "React", "Preact", "No
 const App = () => {
   const [inputVal, setInputVal] = useState(0);
   const [res,setRes]=useState([]);
-   let out;
+   let out=[];
   return (
     <div id="main">
       <label>
