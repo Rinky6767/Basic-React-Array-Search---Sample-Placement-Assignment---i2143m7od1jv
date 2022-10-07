@@ -40,7 +40,7 @@ const App = () => {
               }
             }
             )
-            setRes(out);
+            {setRes(out)}
             res.map((el, i) => {
               return <li key={i}>{el}</li>;
             })}
