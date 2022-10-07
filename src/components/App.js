@@ -31,19 +31,19 @@ const App = () => {
       <div>
         Results
         <ul>
-          { out=searchArray
-            .filter((el) => {
+          { 
+            out=searchArray.filter((el) => {
               if (el.toLowerCase().trim().includes(inputVal)) {
                 return el.toLowerCase().trim().includes(inputVal);
               } else {
                 return false;
               }
-            }
-            )
-            {setRes(out)}
+            })
+            setRes(out)
             res.map((el, i) => {
               return <li key={i}>{el}</li>;
-            })}
+            })
+          }
         </ul>
       </div>
     </div>
