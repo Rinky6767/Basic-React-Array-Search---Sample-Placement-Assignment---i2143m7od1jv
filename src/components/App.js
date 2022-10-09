@@ -15,7 +15,6 @@ const App = () => {
         <input
           type="text"
           id="search-input"
-          onChange={function (e) {
           value={inputVal}
           onChange={function (e) {
             setInputVal(e.target.value);
@@ -34,19 +33,19 @@ const App = () => {
             }
           }}
         />
-      </label>
+     </label>
       <br />
       <br />
       <div>
         Results
         <ul>
-         {res.map((el, i) => {
+          {res.map((el, i) => {
             return <li key={i}>{el}</li>;
           })}
         </ul>
       </div>
     </div>
   );
-};
+}
 
 export default App;
